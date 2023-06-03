@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./Scripts/common.js"></script>
+    <script src="./Scripts/nav.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      i {
+        font-size: 2rem;
+      }
+    </style>
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="signup-form shadow">
+            <form class="mt-5 border p-4">
+              <h4 class="mb-5 text-secondary">Create Account</h4>
+              <div class="row">
+                <div class="mb-3 col-md-12">
+                  <label for="name"
+                    >Name<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control signup-input"
+                    placeholder="Enter Name"
+                  />
+                </div>
+                <div class="mb-3 col-md-12">
+                  <label for="email"
+                    >Email<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control signup-input"
+                    placeholder="Enter Email"
+                  />
+                </div>
+
+                <div class="mb-3 col-md-12">
+                  <label for="password"
+                    >Password<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control signup-input"
+                    placeholder="Enter Password"
+                  />
+                </div>
+
+                <!-- Role Part -->
+                <div class="mb-3 col-md-12">
+                  <h6>Role</h6>
+                  <div class="form-check-inline">
+                    <input
+                      class="form-check-input role"
+                      type="radio"
+                      name="role"
+                      id="hotel_role"
+                      value="hotel"
+                    />
+                    <label class="form-check-label" for="hotel_role">
+                      <i class="fa-solid fa-bell-concierge"></i>
+                      <!-- Can write HOTEL instead -->
+                    </label>
+                  </div>
+
+                  <div class="form-check-inline">
+                    <input
+                      class="form-check-input role"
+                      type="radio"
+                      name="role"
+                      id="radioOption2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="radioOption2">
+                      <i class="fa-solid fa-building-ngo"></i>
+                      <!-- Can write NGO instead -->
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button
+                    class="btn btn-primary signup-submit-button"
+                    name="signup-submit"
+                    id="signup-submit"
+                  >
+                    Signup
+                  </button>
+                </div>
+              </div>
+            </form>
+            <p class="text-center mt-3 text-secondary">
+              If you have account, Please <a href="./login.html">Login Now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./Scripts/signup_script.js"></script>
+  </body>
+</html>
