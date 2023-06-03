@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./Scripts/nav.js"></script>
+    <script src="./Scripts/common.js"></script>
+    <title>Donation</title>
+    <style>
+      .qr-code {
+        width: 15em;
+      }
+      .qr-code img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="top-section"></div> -->
+    <div class="container my-5">
+      <div class="form-body">
+        <form action="">
+          <h1>Enter Details for donation</h1>
+          <!-- User Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              class="form-control userInput"
+              type="text"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+          <!-- Hotel Name
+          <div class="mb-3">
+            <label for="hotelName" class="form-label"
+              >Hotel Name ( if any )</label
+            >
+            <input
+              class="form-control userInput"
+              type="text"
+              id="hotelName"
+              placeholder="Hotel Name"
+            />
+          </div> -->
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control userInput"
+              id="phone"
+              placeholder="1234567891"
+            />
+          </div>
+          <!-- Amount -->
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input
+              type="number"
+              class="form-control userInput"
+              id="amount"
+              min="1"
+              value="1"
+            />
+          </div>
+          <div class="mb-3">
+            <h6>Send Donation to "yourUPIID"</h6>
+            <div class="qr-code">
+              <img src="./assets/qr.png" alt="" />
+            </div>
+          </div>
+          <button id="submit" type="button" class="btn btn-success">
+            Submit
+          </button>
+          <!-- 
+            Just in case you guys want to add 
+            <a href="./index.html" id="cancel" class="btn btn-danger"> Cancel </a> -->
+        </form>
+      </div>
+    </div>
+    <script src="./Scripts/donate_form_script.js"></script>
+  </body>
+</html>
