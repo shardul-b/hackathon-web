@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./Scripts/nav.js"></script>
+    <script src="./Scripts/common.js"></script>
+    <title>Food Disposal</title>
+  </head>
+
+  <body>
+    <!-- <div class="top-section"></div> -->
+    <div class="container my-5">
+      <div class="form-body">
+        <form action="">
+          <h1>Enter Hotel Details for food disposal</h1>
+          <!-- User Name -->
+          <div class="mb-3">
+            <label for="userName" class="form-label">User Name</label>
+            <input
+              class="form-control userInput"
+              type="text"
+              id="userName"
+              placeholder="User Name"
+            />
+          </div>
+          <!-- Hotel Name -->
+          <div class="mb-3">
+            <label for="hotelName" class="form-label">Hotel Name</label>
+            <input
+              class="form-control userInput"
+              type="text"
+              id="hotelName"
+              placeholder="Hotel Name"
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label for="hotelPhone" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control userInput"
+              id="hotelPhone"
+              placeholder="1234567891"
+            />
+          </div>
+          <!-- Veg/Non Veg -->
+          <div class="mb-3">
+            <h6>Type of food</h6>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input foodType"
+                type="radio"
+                id="veg"
+                name="foodType"
+                value="veg"
+              />
+              <label class="form-check-label" for="veg">Veg</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input foodType"
+                type="radio"
+                id="nonVeg"
+                value="non-veg"
+                name="foodType"
+              />
+              <label class="form-check-label" for="nonVeg">Non Veg</label>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="mb-3">
+            <label for="hotelAddress" class="form-label">Address</label>
+            <textarea
+              class="form-control userInput"
+              id="hotelAddress"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <!-- Latitude and Longitude -->
+          <div class="location_section">
+            <div class="col-md-6">
+              <label for="hotel_latitude" class="form-label">Latitude</label>
+              <input
+                type="text"
+                class="form-control userInput"
+                id="hotel_latitude"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="hotel_longitude" class="form-label">Longitude</label>
+              <input
+                type="text"
+                class="form-control userInput"
+                id="hotel_longitude"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary my-3"
+              id="generate_location"
+            >
+              Generate
+            </button>
+          </div>
+          <!-- Food Rating -->
+          <div class="mb-3">
+            <label for="rating" class="form-label">Rate the food </label>
+            <input
+              class="form-control userInput"
+              type="number"
+              min="0"
+              id="rating"
+            />
+          </div>
+          <button id="submit" type="button" class="btn btn-success">
+            Submit
+          </button>
+          <!-- 
+            Just in case you guys want to add 
+            <a href="./index.html" id="cancel" class="btn btn-danger"> Cancel </a> -->
+        </form>
+      </div>
+    </div>
+    <script src="./Scripts/hotel_dispose_form_script.js"></script>
+  </body>
+</html>
