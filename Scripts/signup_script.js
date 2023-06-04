@@ -21,6 +21,8 @@ elementSelector('#signup-submit').addEventListener('click', () => {
     .then((response) => response.json())
     .then((data) => {
       //data
+      sessionStorage.setItem('userId',data.userId)
+      //save user id in session storage
     })
     .catch((error) => {
       //handle error

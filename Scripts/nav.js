@@ -1,4 +1,12 @@
-document.write(`
+window.onload = () => {
+  let button = '';
+  let userId = sessionStorage.getItem('user_id');
+  if (userId) {
+    button = `<a href="./account.html?userId=${userId}" class="btn btn-outline-primary" type="button">Account</a>`;
+  } else {
+    button = `<a href="./login.html" class="btn btn-outline-success" type="button">Login</a>`;
+  }
+  document.write(`
 <head>
  <!--Bootstrap-->
   <link
@@ -31,7 +39,7 @@ document.write(`
             <a class="nav-link" href="./donate_form.html">Donate</a>
           </li>
         </ul>
-        <a href="./login.html" class="btn btn-outline-success" type="button">Login</a>
+        ${button}
       </div>
     </div>    
 </nav>
@@ -40,3 +48,4 @@ document.write(`
 </body>
 
 `);
+};
